@@ -14,7 +14,7 @@ int main(){
 	}
 	sort(in, in+n);
 	for(int i=0; i<n; i++){
-	
+		count[in[i]] = count[in[i]]+1;
 	}
 	long long tempcount=0;
 	ans.push_back(in[0].second);
