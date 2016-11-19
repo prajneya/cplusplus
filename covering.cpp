@@ -13,9 +13,6 @@ int main(){
 		cin >> in[i].first >> in[i].second;
 	}
 	sort(in, in+n);
-	for(int i=0; i<n; i++){
-		count[in[i]] = count[in[i]]+1;
-	}
 	long long tempcount=0;
 	ans.push_back(in[0].second);
 	for(long long i=1; i<n; i++){
