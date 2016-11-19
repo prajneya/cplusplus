@@ -27,7 +27,7 @@ int main(){
 	sort(v.begin(), v.end());
 	sort(w.begin(), w.end());
 	
-	long long temp_diff=200000000;
+	long long temp_diff=2000000000000000000;
 	long long tempi, tempj, tempk;
 	vector<long long> answers;
 	for(long long i=0; i<n; i++){
@@ -41,7 +41,7 @@ int main(){
 				
 			}
 		}
-		temp_diff=200000000;
+		temp_diff=2000000000000000000;
 		for(int k=0; k<y; k++){
 			if(w[k]>=end[tempi]){
 				if(temp_diff>=w[k]-end[tempi]){
@@ -51,7 +51,7 @@ int main(){
 			}
 		}
 		answers.push_back((w[tempk]-v[tempj])+1);
-		temp_diff=200000000;
+		temp_diff=2000000000000000000;
 	}
 	
 	cout << *min_element(answers.begin(), answers.end());
